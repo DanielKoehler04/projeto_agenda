@@ -91,7 +91,7 @@ def delete(request, contact_id):
 
     return render( 
         request,
-        'contact/contact.html ',
+        'contact/contact.html',
         {
             'contact': contact,
             'confirmation': confirmation
