@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 #View da página princial
+@login_required(login_url='contact:login')
 def index(request):
 
     #Extrai os contatos da Base de Dados
