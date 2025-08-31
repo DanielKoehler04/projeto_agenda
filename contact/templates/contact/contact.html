@@ -21,7 +21,7 @@
        
         {% if user == contact.owner %}
             <div class="contact-links">
-                <a class='btn btn-link' href=" {% url 'contact:update' contact.id %} ">Editar</a>
+                <a class="btn btn-link" href=" {% url 'contact:update' contact.id %} ">Editar</a>
         
                 <form action="{% url 'contact:delete' contact.id %}" method="POST">
                     {% csrf_token %}
